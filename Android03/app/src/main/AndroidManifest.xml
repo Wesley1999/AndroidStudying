@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangshaogang.android03">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity2"
+            android:label="Standard活动" />
+        <activity
+            android:label="对话框活动"
+            android:name=".Activity3_Dialog"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:label="singleTop活动"
+            android:name=".Activity4_SingleTop"
+            android:launchMode="singleTop" />
+        <activity
+            android:label="singleTask活动"
+            android:name=".Activity5_singleTask"
+            android:launchMode="singleTask" />
+        <activity
+            android:label="singleInstance活动"
+            android:name=".Activity6_singleInstance"
+            android:launchMode="singleInstance"></activity>
+    </application>
+
+</manifest>

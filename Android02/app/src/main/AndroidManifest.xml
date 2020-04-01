@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangshaogang.android02">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstActivity"
+            android:label="Android02" >
+            <intent-filter>
+                <!-- 配置为主活动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SecondActivity"
+            android:label="活动2" >
+            <intent-filter>
+                <!-- 可以响应com.wangshaogang.android02.ACTION_START这个action -->
+                <action android:name="com.wangshaogang.android02.ACTION_START" />
+                <!--
+                    能相应的Intent中可能带有的category，
+                    只有与上面的一个条件同时匹配上Intent中指定的action和category才能响应该Intent
+                -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ThirdActivity"
+            android:label="活动3" >
+            <intent-filter>
+                <!-- 可以响应com.wangshaogang.android02.ACTION_START这个action -->
+                <action android:name="com.wangshaogang.android02.ACTION_START" />
+                <!--
+                    能相应的Intent中可能带有的category，
+                    只有与上面的一个条件同时匹配上Intent中指定的action和category才能响应该Intent
+                -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
